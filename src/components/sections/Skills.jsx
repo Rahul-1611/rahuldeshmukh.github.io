@@ -100,12 +100,6 @@ const Skills = () => {
                                     </span>
                                 ))}
                             </div>
-
-                            {index === skillsData.length - 1 && (
-                                <div className="mt-12 text-slate/50 font-mono text-xs italic">
-                                    // edit skills in src/data/skills.js
-                                </div>
-                            )}
                         </div>
                     ))}
                 </div>

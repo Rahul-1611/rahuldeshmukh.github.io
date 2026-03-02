@@ -56,18 +56,19 @@ export const projects = [
     {
         id: 4,
         title: "Mock Interview Platform",
-        description: "Full-stack application designed to help developers practice technical interviews with AI-driven feedback.",
-        details: "A comprehensive platform that simulates real-world interview scenarios. It includes code editors, video sessions, and automated feedback mechanisms to improve interview readiness.",
+        description: "A peer-to-peer technical and behavioral interview practice platform featuring real-time matching and WebRTC-based video sessions.",
+        details: "Built to simulate professional interview environments, this platform matches users based on shared preferences using the Jaccard similarity algorithm. It features a custom WebRTC implementation for low-latency video/audio communication, a collaborative code editor, and a library of questions scraped via Cheerio. Users can schedule sessions, conduct live interviews, and receive comprehensive performance reports based on peer feedback.",
         images: [
             "/projects/Mock-Interview-Platform/login.png",
             "/projects/Mock-Interview-Platform/Dashboard.png",
             "/projects/Mock-Interview-Platform/execution.png"
         ],
-        architecture: ["React", "Node.js", "WebSockets", "AI Feedback"],
+        architecture: ["WebRTC", "Node.js", "MongoDB", "EJS", "Cheerio", "REST API"],
         highlights: [
-            "Real-time collaborative code editor with syntax highlighting",
-            "AI-integrated feedback system for technical accuracy",
-            "Video/Audio streaming for realistic interview simulation"
+            "Implemented Jaccard similarity algorithm for intelligent peer matching",
+            "Integrated WebRTC for real-time video, audio, and collaborative coding",
+            "Automated question bank generation using Cheerio-based web scraping",
+            "End-to-end interview lifecycle: scheduling, live execution, and peer-driven reporting"
         ],
         github: "https://github.com/Rahul-1611/mockInterviewPlatform",
         live: ""
@@ -75,16 +76,19 @@ export const projects = [
     {
         id: 5,
         title: "nsLookup Clone",
-        description: "A specialized network utility for DNS querying and troubleshooting, built to replicate professional tools.",
-        details: "Built as a high-performance network utility, this clone allows users to perform deep DNS lookups, verify records, and diagnose connectivity issues from a streamlined interface.",
+        description: "A lightweight DNS client implementation that performs domain name to IP address translation by directly communicating with DNS servers using the DNS protocol.",
+        details: "This project implements a custom DNS client from scratch, handling the construction of DNS query messages and parsing responses. It communicates directly with DNS servers like Google's 8.8.8.8 over UDP, implementing the core DNS protocol logic without relying on high-level system libraries. It features a robust timeout-based retry mechanism and detailed Resource Record (RR) processing for accurate IP translation.",
         images: [
             "/projects/nsLookup-Clone/demo-nsLookupClone.png"
         ],
-        architecture: ["C++/Go", "Networking", "DNS Protocol"],
+        architecture: ["C", "UDP", "DNS Protocol", "Socket Programming"],
         highlights: [
-            "Fast recursive and iterative DNS query resolution",
-            "Supports all major record types (A, AAAA, MX, TXT, CNAME)",
-            "Detailed response analysis including TTL and Authoritative status"
+            "Custom DNS query message construction",
+            "UDP-based communication with DNS servers",
+            "Support for Google's public DNS (8.8.8.8)",
+            "Timeout-based retry mechanism",
+            "Detailed response parsing and display",
+            "Resource Record (RR) processing"
         ],
         github: "https://github.com/Rahul-1611/nslookupClone",
         live: ""
@@ -92,20 +96,21 @@ export const projects = [
     {
         id: 6,
         title: "AeroCarbon",
-        description: "Dashboard for monitoring and analyzing carbon footprints and environmental impacts of aeronautical operations.",
-        details: "AeroCarbon provides a data-driven approach to tracking emissions. It aggregates flight data and calculates carbon offsets, providing actionable insights for sustainability initiatives.",
+        description: "Scope 3 emissions intelligence platform that uses a multi-agent AI pipeline to convert procurement invoices into real-time carbon insights.",
+        details: "AEROCARBON transforms unstructured procurement data into measurable climate impact. Using a hybrid pipeline of Gemini 1.5 Flash and deterministic parsing, the system extracts line-item data from supplier invoices and maps them to auditable CO2e calculations. Organized around a three-agent architecture (OCR, Mapping, and Auditing), it eliminates 'estimation fog' by replacing industry averages with invoice-level activity data. The platform ensures full transparency with a structured audit lineage stored in Snowflake, tracking every transformation from raw document to final emission result.",
         images: [
             "/projects/AeroCarbon/Dashboard.png",
             "/projects/AeroCarbon/AeroCarbonDemo.png"
         ],
-        architecture: ["React", "Data Visualization", "Environmental APIs"],
+        architecture: ["FastAPI", "Gemini 1.5 Flash", "Snowflake", "React", "Python Agents"],
         highlights: [
-            "Real-time carbon footprint calculation based on flight parameters",
-            "Interactive data visualizations for trend analysis",
-            "Exportable sustainability reports for regulatory compliance"
+            "Multi-Agent System: Dedicated OCR, Mapping, and Auditing agents for end-to-end data integrity",
+            "AI-Powered Extraction: Leverages Gemini 1.5 Flash for semantic normalization of complex invoice layouts",
+            "Traceable CO2e Metrics: Derived from real procurement behavior rather than opaque sector averages",
+            "Snowflake Integration: Structured memory for raw documents, extraction logs, and audit lineage"
         ],
         github: "https://github.com/Rahul-1611/AEROCARBON",
-        live: ""
+        live: "https://aerocarbon.vercel.app/"
     },
     {
         id: 7,
@@ -127,20 +132,21 @@ export const projects = [
     },
     {
         id: 8,
-        title: "Vocal Coin",
-        description: "Cryptocurrency tracking and analysis platform featuring voice-driven navigation and alerts.",
-        details: "Vocal Coin combines financial technology with voice recognition, allowing users to track their portfolios and set price alerts using natural language commands.",
+        title: "VocalCoin",
+        description: "Innovative Expense Tracker that enables hands-free financial management using natural language voice commands.",
+        details: "VocalCoin is a voice-first web application designed to simplify personal finance. Built with React and the Speechly SDK, it leverages complex state management through React Hooks (useContext, useReducer) to process and categorize spoken transactions in real-time. By integrating Speechly's NLP capabilities, the platform understands intents like 'Add income for $100 in category Business for last Monday', instantly updating the global state and providing a seamless, interactive user experience without manual typing.",
         images: [
             "/projects/Vocal-Coin/VocalCoinDemo.png"
         ],
-        architecture: ["React", "Voice Recognition API", "Crypto Exchange APIs"],
+        architecture: ["React", "Vite", "Speechly SDK", "Context API", "Material UI"],
         highlights: [
-            "Voice-activated portfolio tracking and market searches",
-            "Real-time price updates for over 1000+ cryptocurrencies",
-            "Secure encrypted wallet integration for personal holdings"
+            "Voice-Driven NLU: Integrated Speechly for high-accuracy processing of complex financial intents",
+            "Advanced Hooks Mastery: Utilized Context API and custom hooks for global state and voice synchronization",
+            "Real-time Data Stream: Instant categorization and visualization of expenses as the user speaks",
+            "PWA Ready: Optimized for quick mobile access and offline-first interactions"
         ],
         github: "https://github.com/Rahul-1611/VocalCoin",
-        live: ""
+        live: "https://vocalcoin.netlify.app/"
     },
     {
         id: 9,
@@ -163,20 +169,20 @@ export const projects = [
         github: "https://github.com/Rahul-1611/Mobile-fl-app",
         live: ""
     },
+
     {
         id: 10,
         title: "AdviceChromeExtension",
-        description: "A lightweight Chrome extension that provides contextual productivity advice and mental wellness prompts.",
-        details: "Designed to counteract digital fatigue, this extension surfaces timely advice and productivity hacks based on the user's browsing patterns and time spent on specific domains.",
+        description: "A simple Chrome extension built to practice API integration and browser extension development.",
+        details: "One of my early projects focused on learning how to interact with third-party APIs from the frontend. It fetches and displays random pieces of advice using a public API, providing a hands-on introduction to the Chrome Extension manifest and background scripts.",
         images: [
             "/projects/AdviceChromeExtension/desktop-design.jpg",
             "/projects/AdviceChromeExtension/mobile-design.jpg"
         ],
-        architecture: ["Javascript", "Chrome Extension API", "HTML/CSS"],
+        architecture: ["JavaScript", "Chrome Extension API", "Fetch API", "HTML/CSS"],
         highlights: [
-            "Context-aware productivity prompts based on active tabs",
-            "Low-footprint background processing ensuring no browser lag",
-            "Customizable advice categories including 'Wellness' and 'Technical Hacks'"
+            "Integrated a public REST API to fetch real-time data",
+            "Learned the fundamentals of Chrome Extension architecture and manifest files"
         ],
         github: "https://github.com/Rahul-1611/AdviceChromeExtension",
         live: ""

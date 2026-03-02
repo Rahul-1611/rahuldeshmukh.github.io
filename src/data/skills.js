@@ -4,7 +4,7 @@ export const skillsData = [
         title: "Cloud",
         subtitle: "Azure-first cloud architecture & services",
         items: [
-            "Azure", "AWS", "Serverless", "VMs", "VPC", "IAM", "Storage"
+            "Azure", "AWS", "Serverless", "Virtual Machines", "VPC", "IAM", "Storage"
         ]
     },
     {
