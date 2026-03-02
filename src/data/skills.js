@@ -4,14 +4,7 @@ export const skillsData = [
         title: "Cloud",
         subtitle: "Azure-first cloud architecture & services",
         items: [
-            "Azure App Service",
-            "Azure Functions",
-            "Azure Kubernetes Service",
-            "Azure DevOps",
-            "Azure Blob Storage",
-            "Azure Cosmos DB",
-            "ARM Templates",
-            "Azure Monitor"
+            "Azure", "AWS", "Serverless", "VMs", "VPC", "IAM", "Storage"
         ]
     },
     {
@@ -19,10 +12,12 @@ export const skillsData = [
         title: "AI / ML",
         subtitle: "Machine learning, LLMs & intelligent systems",
         items: [
-            "Placeholder Skill 1",
-            "Placeholder Skill 2",
-            "Placeholder Skill 3",
-            "Placeholder Skill 4"
+            "Langgraph",
+            "MCP",
+            "AI Agents",
+            "LLM Integration",
+            "RAG",
+            "Agentic Architecture"
         ]
     },
     {
@@ -30,10 +25,13 @@ export const skillsData = [
         title: "Backend",
         subtitle: "Server-side development & databases",
         items: [
-            "Placeholder Skill 1",
-            "Placeholder Skill 2",
-            "Placeholder Skill 3",
-            "Placeholder Skill 4"
+            "Node.js",
+            "Middleware",
+            "Authentication",
+            "MongoDB",
+            "Express.js",
+            "FastAPI",
+            "Snowflake"
         ]
     },
     {
@@ -41,10 +39,13 @@ export const skillsData = [
         title: "DevOps",
         subtitle: "Infrastructure, automation & deployment",
         items: [
-            "Placeholder Skill 1",
-            "Placeholder Skill 2",
-            "Placeholder Skill 3",
-            "Placeholder Skill 4"
+            "Docker",
+            "Kubernetes",
+            "GitHub Actions",
+            "Terraform",
+            "CI/CD",
+            "Git",
+            "Jenkins"
         ]
     }
 ];
