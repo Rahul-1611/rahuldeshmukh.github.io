@@ -20,36 +20,37 @@ export const projects = [
     {
         id: 2,
         title: "ShareSafely",
-        description: "Cloud-native file storage solution focused on high availability and end-to-end security compliance.",
-        details: "ShareSafely is built entirely on Azure Blob Storage with a strong focus on enterprise-grade security. It facilitates secure file uploads using temporary, short-lived SAS tokens, ensuring that backend credentials are never exposed to the client application. Global load balancing and web application firewall (WAF) functionality is provided by Azure Front Door. For user authentication and role-based access control, the system seamlessly integrates with Azure Active Directory (Entra ID).",
+        description: "File sharing solution built to practice Azure's Node.js SDK and Azure Functions architecture",
+        details: "ShareSafely is a secure, cloud-based file-sharing web application that enables users to upload files and generate time-limited sharing links. Built on Azure cloud infrastructure, this application demonstrates modern cloud engineering practices while providing a safe and efficient way to share files with automatic expiration capabilities. This project serves as a comprehensive implementation of Azure storage solutions, showcasing secure file handling, credential management, and automated cleanup processes.",
         images: [
-            "/projects/ShareSafely/ShareSafelyArch.png",
-            "/projects/ShareSafely/ShareSafelyDemo.png"
+            "/projects/ShareSafely/ShareSafelyDemo.png",
+            "/projects/ShareSafely/ShareSafelyArch.png"
         ],
-        architecture: ["Blob Storage", "Azure AD", "Azure Front Door", "React"],
+        architecture: ["Blob Storage", "Azure SDK", "Azure Functions", "React", "Azure Vault"],
         highlights: [
             "Enabled SAS-token based secure uploads to Blob Storage",
-            "Configured Azure Front Door for global load balancing and WAF",
-            "Integrated Azure Active Directory for RBAC authentication"
+            "Configured Blob Storage cleanup policies",
+            "Integrated Azure Managed Identities for RBAC authentication",
+            "Functions for reducing VM costs"
         ],
-        github: "https://github.com/yourusername/share-safely",
-        live: ""
+        github: "https://github.com/Rahul-1611/ShareSafely",
+        live: "https://share-safely.vercel.app/"
     },
     {
         id: 3,
         title: "VM Fleet Commander",
-        description: "Automated virtual machine management and orchestration system for high-scale cloud environments.",
-        details: "VM Fleet Commander provides a centralized control plane for managing large-scale VM deployments across multiple regions. It leverages native cloud APIs for automated provisioning, lifecycle management, and monitoring of virtual infrastructure.",
+        description: "Implemented an IaC approach to provision and manage VMs in Azure, using ARM templates and Bicep.",
+        details: "vmFleetCommander is an Infrastructure-as-Code (IaC) project using Bicep to provision Azure infrastructure. It supports multi-VM fleet deployments with reusable modules for VNet, NSG, and VM creation, as well as scripts and parameter files for automation and testing.",
         images: [
             "/projects/VM-Fleet-Commander/VMFleetArch.jpg"
         ],
-        architecture: ["Cloud APIs", "Python", "Automation", "Monitoring"],
+        architecture: ["Bicep", "ARM", "Python", "Automation", "Monitoring"],
         highlights: [
-            "Automated multi-region VM provisioning and teardown",
-            "Real-time health monitoring and automated recovery",
-            "Centralized dashboard for fleet-wide visibility"
+            "Provisioned scalable Azure VM fleets using IaC with Bicep and ARM templates",
+            "Built reusable Bicep modules for VNets, Network Security Groups, and parameterized VM deployments",
+            "Automated multi-environment deployments with Azure CLI for reproducibility"
         ],
-        github: "https://github.com/yourusername/vm-fleet-commander",
+        github: "https://github.com/Rahul-1611/vmFleetCommander",
         live: ""
     },
     {
@@ -68,7 +69,7 @@ export const projects = [
             "AI-integrated feedback system for technical accuracy",
             "Video/Audio streaming for realistic interview simulation"
         ],
-        github: "https://github.com/yourusername/mock-interview",
+        github: "https://github.com/Rahul-1611/mockInterviewPlatform",
         live: ""
     },
     {
@@ -85,7 +86,7 @@ export const projects = [
             "Supports all major record types (A, AAAA, MX, TXT, CNAME)",
             "Detailed response analysis including TTL and Authoritative status"
         ],
-        github: "https://github.com/yourusername/nslookup-clone",
+        github: "https://github.com/Rahul-1611/nslookupClone",
         live: ""
     },
     {
@@ -103,7 +104,7 @@ export const projects = [
             "Interactive data visualizations for trend analysis",
             "Exportable sustainability reports for regulatory compliance"
         ],
-        github: "https://github.com/yourusername/aerocarbon",
+        github: "https://github.com/Rahul-1611/AEROCARBON",
         live: ""
     },
     {
@@ -121,7 +122,7 @@ export const projects = [
             "Seamless integration with Claude Desktop and other MCP clients",
             "High-performance caching layer for NASA API responses"
         ],
-        github: "https://github.com/yourusername/nasa-mcp-server",
+        github: "https://github.com/Rahul-1611/nasaMcpServer",
         live: ""
     },
     {
@@ -138,7 +139,7 @@ export const projects = [
             "Real-time price updates for over 1000+ cryptocurrencies",
             "Secure encrypted wallet integration for personal holdings"
         ],
-        github: "https://github.com/yourusername/vocal-coin",
+        github: "https://github.com/Rahul-1611/VocalCoin",
         live: ""
     },
     {
@@ -159,7 +160,7 @@ export const projects = [
             "Visualized local training progress across multiple simulated nodes",
             "Implemented robust error handling for edge-case connectivity issues"
         ],
-        github: "https://github.com/yourusername/federated-learning-demo",
+        github: "https://github.com/Rahul-1611/Mobile-fl-app",
         live: ""
     },
     {
@@ -177,25 +178,25 @@ export const projects = [
             "Low-footprint background processing ensuring no browser lag",
             "Customizable advice categories including 'Wellness' and 'Technical Hacks'"
         ],
-        github: "https://github.com/yourusername/advice-extension",
+        github: "https://github.com/Rahul-1611/AdviceChromeExtension",
         live: ""
     },
     {
         id: 11,
-        title: "Microservices Training Engine",
+        title: "FullStackDeployment via Rancher",
         description: "Distributed infrastructure training system used for large-scale Kubernetes deployments.",
         details: "This project showcases container orchestration at scale. It includes automated pipelines for deploying full-stack applications across heterogeneous environments using Rancher and Kubernetes.",
         images: [
             "/projects/FullStackDeployment/Rancher.png",
             "/projects/FullStackDeployment/LiveApp.png"
         ],
-        architecture: ["Rancher", "Kubernetes", "Docker", "CI/CD"],
+        architecture: ["Rancher", "Kubernetes", "Docker", "CI/CD", "Jenkins"],
         highlights: [
             "Configured multi-cluster management through Rancher",
             "Automated blue-green deployment strategies for zero downtime",
             "Implemented comprehensive cluster visibility and logging"
         ],
-        github: "https://github.com/yourusername/full-stack-deploy",
-        live: ""
+        github: "https://github.com/Rahul-1611/sweha3backend",
+        live: "https://drive.google.com/drive/folders/18KatRHTqU0zd769EXcbx7avRNQXrrg3u?usp=sharing"
     }
 ];
