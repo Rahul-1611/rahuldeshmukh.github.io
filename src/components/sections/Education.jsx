@@ -10,16 +10,16 @@ const Education = () => {
             degree: "Master of Science in Computer Science",
             university: "George Mason University, Fairfax, VA",
             date: "May 2026",
-            description: "Advanced coursework focusing on complex software systems, artificial intelligence, and cloud architectures. Engaging in research and practical implementation of scalable backend services.",
-            coursework: ['Advanced Cloud Computing', 'Machine Learning', 'Distributed Systems', 'Advanced Database Systems']
+            description: "Advanced graduate study specializing in Cloud Computing and Artificial Intelligence. My coursework focuses on architecting high-scale distributed systems, implementing intelligent data-driven models, and securing cloud-native infrastructures through modern DevOps practices and network security protocols.",
+            coursework: ['Algorithms', 'Databases', 'Computer Networks', 'Data Mining', 'Wireless Communications', 'Devops', 'Network Security']
         },
         {
             id: 2,
             degree: "Bachelor of Engineering in Computer Engineering",
             university: "Atharva College of Engineering, Mumbai, India",
             date: "May 2024",
-            description: "Focus on distributed systems, software engineering principles, and database management. Consistently applied theoretical knowledge to practical projects emphasizing high availability and backend performance.",
-            coursework: ['Cloud Computing', 'Database Systems', 'Software Architecture', 'Computer Networks', 'Operating Systems', 'Cybersecurity Fundamentals']
+            description: "Foundational computer engineering degree with an early focus on Distributed Systems and Software Engineering principles. Consistently applied theoretical knowledge to practical projects emphasizing high availability, relational database management, and backend performance optimization.",
+            coursework: ['Cloud Computing', 'Software Engineering', 'RDMS', 'Operating Systems', 'Machine Learning', 'Data Structures', 'Cryptography', 'NLP', 'Distributed Systems']
         }
     ];
 
