@@ -40,7 +40,7 @@ const Navbar = () => {
                         </a>
                     ))}
                     <a
-                        href="/resume.pdf"
+                        href="/Rahul_Deshmukh_Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 border border-azure text-azure rounded-md hover:bg-azure/10 transition-colors text-sm font-medium"
